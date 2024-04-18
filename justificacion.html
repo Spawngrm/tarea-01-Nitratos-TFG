@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de tesis - 2024</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+<body> 
+    <div id="contenedor">
+    <header>
+
+    <div align="center">
+        <h1 style="color:rgb(255, 255, 255);">Trabajo final de Graduación</h1></div> 
+    
+        
+        <div align="center">
+            <h2> "Seguimiento de la contaminación con nitratos en los acuíferos de la región 
+                norte de la provincia de Cartago mediante herramientas de software geoespacial." </h2> </div> </header>
+
+                 <nav> 
+                    <ul>
+                        <li><a href="index.html">Presentación del proyecto</a> </li>
+                        <li><a href="justificacion.html">Justificación y Viabilidad</a> </li>
+                        <li><a href="metodologia.html">Metodologia</a> </li>
+                        <li><a href="referencias.html">Referencias</a> </li>
+                    </ul>
+                 </nav>
+                 <section id="contenido">
+                    <article>
+                        <h1>Justificacion</h1> 
+                <div align="justify"> <p class="par">Los habitantes de la región de Cartago dependen de manantiales naturales para su agua potable. 
+                    Las concentraciones de contaminantes en estos manantiales se miden ocasionalmente y cuando estas concentraciones superan los valores 
+                    críticos, se recomienda encarecidamente a los consumidores de estos manantiales que dejen de beber el agua. En ese caso, se deben 
+                    encontrar otras soluciones para suministrar a los ciudadanos agua potable limpia.
+
+                    <p class="par"></p>A menudo, un aumento en la concentración de nitratos en el agua es causado por actividades antropogénicas. 
+                    Los grandes contribuyentes pueden ser la fertilización excesiva de las tierras agrícolas y la fuga contaminada de aguas residuales domésticas. 
+                    La falta de conocimiento sobre el uso de pesticidas y fertilizantes puede ser una razón de los problemas, así como fallas en el sistema de descarga doméstico. 
+                    El fertilizante contiene amonio, que se convertirá en su forma más estable, nitrato. Algunos fertilizantes ya tienen el compuesto de nitrato en forma de nitrato 
+                    de amoníaco. Este nitrato puede escurrirse a cuerpos de agua o filtrarse al suelo y contaminar el agua subterránea en el acuífero. Otra causa de las 
+                    altas concentraciones de nitratos puede ser el tratamiento insuficiente de las aguas residuales.
+
+                    <p class="par"></p>Este proyecto tiene como objetivo generar una base de datos espaciales, actualizada, homologada y que permita utilizar técnicas de teledetección y algebra de mapas para determinar la contaminación por nitratos, con el fin de poder modelar escenarios de la situación actual y como se puede mejorar la toma decesiones utilizando esta tecnología.
+                </p></div> 
+                <br>
+            
+                <div align="center">
+                    <p><img src="1.jpg" width="900"></p>
+                 </div>
+                
+                 <div align="center">
+                     <em><a href="https://www.elpais.cr/2023/06/22/investigan-en-europa-sobre-la-contaminacion-del-agua-en-cartago/">Vista de Cipreces de Oreamuno, Cartago</a>  </div> </em>
+         
+                 </br>
+
+            </article> 
+            <article>
+                <h1>Viabilidad </h1> 
+                <div align="justify"> <p class="par">Este proyecto de investigación es viable debido a que la persona investigadora cuenta con acceso al campo de estudio y 
+                    se ha trabajado con un análisis preliminar de la situación que se está viviendo en la zona norte de Cartago por la utilización de plaguicidas. 
+                    
+                    <p class="par"></p>A partir de una experiencia de trabajo reciente con el Instituto Tecnológico de Costa Rica y un grupo de estudiantes de diferentes 
+                    áreas de la Universidad Técnica de Delft, de Países Bajos, se desarrolló una investigación inicial sobre la problemática de nitratos en la región 
+                    norte de la provincia de Cartago y como se podrían utilizar herramientas geoespaciales para toma de decisiones, análisis multivariable y generar modelos 
+                    estadísticos de la situación que vive esta zona. De esta forma se planteó continuar con el proyecto y generar una base de datos geoespacial y de acceso 
+                    libre de esta información y poder así tener mejores insumos para enfrentar esta problemática.
+                    
+                    <p class="par"></p> A nivel personal, se cuenta  con el conocimiento teórico – práctico en la temática de implementar Sistemas Información Geográfica,
+                    enfatizados en recurso hídrico y su entorno, generando modelos para analizar datos cuantitativos y así tener una base espacial para la toma de decisiones. 
+                    Adicionalmente se cuenta con la disponibilidad de tiempo necesario que requiere el proceso de investigación, toma y recopilación de datos.
+                   
+                    <p class="par"></p> Además, se cuenta con el apoyo del Instituto Tecnológico de Costa Rica, para el desarrollo de esta investigación y seguir colaborando 
+                    con la unidad de posgrado de la Universidad Técnica de Delft. Finalmente, en relación con las necesidades de información, se tiene facilidad de acceso a 
+                    datos geoespaciales de <a href="https://www.aya.go.cr/SitePages/Principal.aspx">Acueductos y Alcantarilladlos</a>, <a href="https://www.muni-carta.go.cr/area-de-acueductos/"> 
+                    la Municipalidad de Cartago</a>, <a href="https://www.muniparaiso.go.cr">Municipalidad de Paraíso</a> y <a href="https://www.oreamuno.go.cr/"> Municipalidad de Oreamuno</a>. 
+                    Al igual que se tiene un contacto directo con el Ministerio de Salud y Ministerio de Agricultura y Ganadería. Pero el actor clave de esta investigación serían las 14 
+                    Asadas de la zona norte de Cartago, que tiene una anuencia completa para el desarrollo de esta investigación. 
+                    
+                    </ul>
+
+                 </nav>
+                </head>
+                <body>
+                    <h3>Caso central urbano de la provincia de Cartago</h3>
+                    <!-- Botón para mostrar el mapa -->
+                    <button id="show-map-button">Mostrar Mapa</button>
+                
+                    <!-- Contenedor para el mapa -->
+                    <div align="center"><p class="par"></p><div id="map-container"></div>
+
+                    <div align="center">
+                        <em>Google Maps, 2024</div> </em>
+                </body>
+                </html>
+
+    </article>
+    </section>
+
+<aside id="aside">
+    <h4 class="Buscador">Buscador</h4>
+    <form action="https://www.google.com/search" method="GET" target="_blank"> <!-- Agregar action y method -->
+        <input type="text" name="q"> <!-- Agregar el atributo name -->
+        <input type="submit" value="Buscar">
+    </form>
+</aside>
+
+<!-- Botón para ir a Google Maps -->
+<div align="center">
+    <a href="https://www.google.com/maps" target="_blank">
+        <button>Ir a Google Maps</button>
+    </a>
+</div>
+</form>
+</aside>
+ <div class="separator"></div>
+
+<footer> <div align="center"><p class="par"></p>Elaborado por: Godofredo Rojas Mata.
+    Maestría Profesional en Sistemas de Información Geográfica y Teledetección
+    Universidad de Costa Rica - Universidad Nacional
+</footer>
+</div>
+    </body>
+    </html>
